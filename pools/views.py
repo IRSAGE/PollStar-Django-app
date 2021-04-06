@@ -9,3 +9,12 @@ def index (request):
     context = {'latest_question_list': latest_question_list}
 
     return render (request, 'polls/index.html',context)
+
+#Show Specific questions and Choices
+
+def detail(request, question_id):
+    try:
+        question = Question.objects.get(pk=question_id)
+    except Question.DoesNotExist:
+        raise Http404("Question Does Not Exit")
+    return render(request,'polls/results.html',{ 'question':question})

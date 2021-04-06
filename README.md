@@ -3,3 +3,4 @@ This Is A Django Clash Project Where You Can Add Questions And Vote As well As S
 
 ## `Live Preview`
 https://sage-pollstar.herokuapp.com/
+![Preview Image](Preview.jpg)

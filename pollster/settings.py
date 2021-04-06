@@ -25,7 +25,7 @@ SECRET_KEY = '1u%f*29amjzyzwbewlec$u#4^tpg+qw-#9(oid45#noy9aeehe'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://sage-pollstar.herokuapp.com/']
 
 
 # Application definition

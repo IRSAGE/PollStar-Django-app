@@ -18,3 +18,9 @@ def detail(request, question_id):
     except Question.DoesNotExist:
         raise Http404("Question Does Not Exit")
     return render(request,'polls/results.html',{ 'question':question})
+
+# Get Wuestion and display results
+
+def results(request, question_id):
+    question = get_object_or_404(Question, pk=question_id)
+    return render(request, 'polls/results.html', {'question': question})
